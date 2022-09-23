@@ -1,0 +1,23 @@
+.home01 .slider-area .slider-img, .home02 .slider-area .slider-img {
+  margin: 30px 0 10px;
+}
+
+.home01 .slider-area .slider-img img, .home02 .slider-area .slider-img img {
+  height: 570px;
+}
+
+.home03 .slider-area {
+  margin-top: 30px;
+}
+
+.home03 .slider-area [class^="col-md-"] {
+  padding: 0px;
+}
+
+.home03 .slider-area .slider {
+  margin-right: 5px;
+}
+
+.home03 .slider-area .slider .slider-img img {
+  height: 573px;
+}

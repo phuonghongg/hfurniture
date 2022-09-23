@@ -1,0 +1,9 @@
+.about_our_shop_area .about_shop_img {
+  height: 375px;
+}
+
+.about_our_shop_area .about_shop_content h3 {
+  font-size: 19px;
+  text-transform: capitalize;
+  font-weight: 600;
+}

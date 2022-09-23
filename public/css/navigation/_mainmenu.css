@@ -1,0 +1,321 @@
+/* navigation one */
+.groham-nav {
+  border-color: #f2f2f2;
+}
+
+.navbar-collapse {
+  padding: 0px;
+}
+
+.groham-nav .navbar-toggle {
+  border-color: #FFF;
+  border-radius: 0;
+}
+
+.groham-nav .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
+.groham-nav .nav li a {
+  color: #a0a0a0;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: 'Montserrat Light', 'Open Sans';
+}
+
+.navbar {
+  min-height: 46px;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 767px) {
+  .navbar-nav {
+    text-align: center !important;
+  }
+  .dropdown:hover .dropdown-menu {
+    visibility: visible !important;
+  }
+  ul.nav.navbar-nav li.dropdown ul.dropdown-menu {
+    visibility: hidden;
+  }
+}
+
+.dropdown > a:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  margin: -5px 0 0 10px;
+  vertical-align: middle;
+  border-left: 0px solid transparent;
+  border-top: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.dropdown-menu > li > a {
+  font-size: 12px;
+}
+
+/* Mega Menu */
+.megamenu .nav,
+.megamenu .collapse,
+.megamenu .dropup,
+.megamenu .dropdown {
+  position: static;
+}
+
+.megamenu .container {
+  position: relative;
+}
+
+.home1 .megamenu .dropdown-menu,
+.home2 .megamenu .dropdown-menu,
+.home4 .megamenu .dropdown-menu,
+.home4 .megamenu .dropdown-menu,
+.megamenu .dropdown-menu {
+  left: auto !important;
+}
+
+.megamenu .megamenu-content {
+  padding: 15px;
+}
+
+.megamenu .megamenu-content h3 {
+  margin-top: 0;
+  color: #428bca;
+  font-size: 18px;
+}
+
+.megamenu .dropdown.megamenu-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+
+.megamenu .megamenu-content li a {
+  text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 100%;
+  padding: 15px 45px 15px 0;
+}
+
+.dropdown-menu.megamenu-content li a:hover {
+  color: #9560F5;
+}
+
+.sell {
+  background-color: #FF4343;
+}
+
+.sell:before {
+  border-bottom: 19px solid #FF4343;
+}
+
+.new {
+  background-color: #9560F5;
+}
+
+.new:before {
+  border-bottom: 19px solid #9560F5;
+}
+
+.hot {
+  background-color: #58C12E;
+}
+
+.hot:before {
+  border-bottom: 19px solid #58C12E;
+}
+
+.sell, .new, .hot {
+  height: 0;
+  width: 0;
+  padding: 0px 5px;
+  color: #FFF;
+  position: relative;
+  margin-left: 19px;
+}
+
+.sell:before, .new:before, .hot:before {
+  content: "";
+  width: 0;
+  height: 0;
+  left: -15px;
+  top: 0;
+  position: absolute;
+  border-left: 15px solid transparent;
+}
+
+/* navigation Two */
+.navbar-style-2 .navbar-brand {
+  padding: 5px 15px;
+}
+
+.navbar-style-2 .nav li a img {
+  margin-right: 5px;
+}
+
+.nav li.cart a.groham-btn {
+  padding: 5px 18px !important;
+}
+
+.navbar-style-2 .nav li a {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.nav li.cart a:hover {
+  color: #FFF;
+}
+
+.navbar-style-2.groham-nav {
+  border: 0;
+  padding: 15px 0;
+}
+
+.navbar-style-2 .dropdown:hover .dropdown-menu {
+  top: 79px;
+}
+
+.home5 .navbar-style-2.groham-nav,
+.home6 .navbar-style-2.groham-nav {
+  padding: 10px 0 30px;
+}
+
+.home5 .groham-nav .nav li a,
+.home6 .groham-nav .nav li a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Mini Cart */
+.cart-list {
+  min-width: 320px;
+  height: auto;
+  position: absolute;
+  z-index: 999;
+  background-color: #FFF;
+  padding: 20px;
+  padding-top: 0;
+  box-shadow: 2px 5px 10px #ddd;
+  top: 50px;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.cart:hover .cart-list {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.cart-list .title {
+  text-align: left;
+  color: #292929;
+  margin: 20px 0;
+}
+
+.cart-list .title span {
+  font-size: 12px;
+  color: #707070;
+  font-family: 'Montserrat Light';
+  margin-left: 10px;
+}
+
+.cart-list .title span.amount {
+  color: #292929;
+}
+
+.cart-list .product-info h5 {
+  color: #292929;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.cart-item {
+  overflow: hidden;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 40px;
+}
+
+.cart-item img {
+  float: left;
+  width: 80px;
+  height: auto;
+  margin: 0 18px 0 0;
+}
+
+.cart-item .star-rating ul li {
+  float: left;
+  color: #ffc925;
+  margin: 0 5px;
+}
+
+.cart-list a {
+  display: inline-block;
+  margin: 0 8px;
+  padding: 10px 20px !important;
+}
+
+span.remove {
+  position: absolute !important;
+  display: block;
+  background-image: url("../img/cross.png");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  left: 90px;
+}
+
+span.close-icon {
+  position: absolute !important;
+  display: block;
+  background-color: #f5f5f5;
+  color: #272727;
+  font-size: 14px;
+  padding: 3px;
+  cursor: pointer;
+  left: 86px;
+}
+
+.navbar-style-2 span.remove {
+  left: 75px;
+}
+
+/* Header 2 mini cart */
+.navbar-style-2 .cart {
+  background: transparent;
+  border-radius: 0;
+  height: auto;
+  width: auto;
+}
+
+.navbar-style-2 .cart > a span {
+  background-color: transparent;
+  position: static;
+  color: #707070;
+  border: 0;
+  margin-left: 15px;
+}
+
+.price {
+  font-family: 'Montserrat Light';
+  font-size: 13px;
+}
+
+.price del {
+  color: #cbcbcb;
+  margin: 0 10px;
+  font-family: 'Montserrat Light';
+  font-size: 13px;
+}

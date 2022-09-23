@@ -1,0 +1,80 @@
+@media only screen and (max-width: 1200px) {
+  .widget-popular-products .item .product-info .cart-btn {
+    padding: 8px 7px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .site-content .about_our_team_area .single_team_member {
+    padding-bottom: 20px;
+  }
+  .site-content .about_our_team_area .single_team_member .team-image {
+    height: 365px;
+  }
+  .about01 .about_our_team_area {
+    margin-bottom: 25px;
+  }
+  .side-bar .widget {
+    float: left;
+    width: 46%;
+  }
+  .side-bar .widget:nth-child(2n-1) {
+    margin-right: 8%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .site-content .about_our_team_area .single_team_member .team-image {
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .site-content .about_our_team_area .single_team_member .team-image {
+    height: 275px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about_our_shop_area .about_shop_img {
+    height: 280px;
+  }
+  .site-content .about_our_team_area .col-md-3 {
+    width: 100%;
+  }
+  .site-content .about_our_team_area .col-md-3 .team-image {
+    height: 420px;
+  }
+  .pagination > li a {
+    height: 30px;
+    margin-right: 8px;
+    width: 30px;
+  }
+  .contact-page .g-map {
+    height: 340px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .site-content .about_our_shop_area .about_shop_img {
+    height: 320px;
+  }
+  .site-content .about_our_team_area .col-md-3 {
+    width: 100%;
+  }
+  .site-content .about_our_team_area .col-md-3 .team-image {
+    height: 320px;
+  }
+  .contact-page .g-map {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .site-content .about_our_shop_area .about_shop_img {
+    height: 290px;
+  }
+  .contact-page .g-map {
+    height: 260px;
+  }
+}

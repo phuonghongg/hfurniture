@@ -1,0 +1,128 @@
+.shop_table {
+  border: 1px solid #e3e3e3;
+  border-collapse: collapse;
+  margin: 0 0 50px;
+}
+
+.shop_table th {
+  color: #292929;
+  font-family: "Montserrat Semi Bold";
+  font-size: 14px;
+  text-align: center !important;
+  text-transform: uppercase;
+}
+
+.shop_table tr {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px;
+}
+
+.shop_table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.product-thumbnail img {
+  height: 98px;
+  margin: 30px 0;
+  width: 77px;
+}
+
+.shopping-cart .product-name {
+  padding-left: 110px;
+  text-align: left !important;
+}
+
+.shopping-cart thead tr th {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.product-remove {
+  padding-left: 40px;
+}
+
+.shopping-cart .product-info {
+  text-align: left;
+}
+
+.shopping-cart .product-info a {
+  color: #292929;
+  font-family: "Raleway",sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.shopping-cart .product-number {
+  color: #1a1a1a;
+  font-size: 13px;
+}
+
+.shopping-cart .quantity input {
+  max-width: 80px;
+  padding: 5px 0 5px 15px;
+}
+
+.shopping-cart h4 {
+  color: #292929;
+  font-size: 14px;
+}
+
+.calculate-shipping h4, .cupon-code .coupon-heading {
+  font-family: "Raleway",sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.cupon-code > table {
+  margin-top: 20px;
+}
+
+.cupon-code > table th {
+  font-family: "Raleway",sans-serif;
+  font-weight: 600;
+}
+
+span.amount-subtotal {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.shopping-cart input, .shopping-cart textarea, .shopping-cart select {
+  border: 1px solid #e3e3e3;
+  border-radius: 0;
+  color: #a0a0a0;
+  margin: 15px 0;
+  padding: 12px;
+  width: 100%;
+}
+
+.calculate {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #292929;
+  color: #292929;
+  font-family: "Montserrat Light";
+  font-size: 11px;
+  padding: 5px !important;
+  text-transform: uppercase;
+  width: 40% !important;
+}
+
+.zip, .cupon {
+  padding: 5px !important;
+}
+
+.cupon-code table, .cupon-code table tr {
+  border: 1px solid #e3e3e3;
+}
+
+.cupon-code th {
+  color: #272727;
+  font-family: "Raleway Medium";
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
