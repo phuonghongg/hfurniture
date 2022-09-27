@@ -4,6 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Models\Categories;
+use App\Models\Products;
+use Illuminate\Database\Eloquent\Collection;
 
 class CategoryController extends Controller
 {
@@ -12,10 +16,16 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->viewprefix = 'admin.category.';
+    }
+
     public function index()
     {
         //
-        return view('admin/category/list');
+        $list = Categories::paginate(5);
+        return view($this->viewprefix.'list', compact('list'));
     }
 
     /**
@@ -83,5 +93,13 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         //
+        $check = Products::where('id_category', $id)->first();
+        if(isset($check)){
+            return back()->with('error', 'Không thể xóa!');
+        }else{
+            $del = Categories::find($id);
+            $del->delete();
+            return back()->with('success', 'Xóa thành công!');
+        }
     }
 }

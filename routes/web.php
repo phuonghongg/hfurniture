@@ -35,15 +35,15 @@ Route::controller(HomeController::class)->group(function () {
 
 // Route::middleware(['auth', 'admin'])->group(function () {
 
-    Route::prefix('admin')->group(function () {
+    Route::prefix('admin')->name('admin.')->group(function () {
 
         //route category here...
         Route::controller(CategoryController::class)->group(function () {
-            Route::get('/loai/danh-sach', 'index');
+            Route::get('/loai/danh-sach', 'index')->name('dsloai');
             Route::get('/loai/them', 'create');
             Route::post('/loai/them', 'store');
-            Route::get('/loai/sua/', 'edit');
-            Route::post('/loai/sua', 'update');
+            Route::get('/loai/sua/{id}', 'edit');
+            Route::post('/loai/sua/{id}', 'update');
             Route::get('/loai/xoa/{id}', 'destroy');
         });
         //product here...

@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('admin/dashboard')
 
 @section('content')
 <div id="#content" class="site-content">
